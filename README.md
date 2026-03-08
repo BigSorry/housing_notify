@@ -1,13 +1,16 @@
 ## Telegram notification for rentals
 
-### Testing the Pi Architecture
 
-The Docker image is built for **arm64**.
+### Remainder for w11 docker test pi5
 
-### On Windows 11
-To test the image on Windows 11, run:
+### Build the image
 
 ```bash
-docker run --platform linux/arm64 {build_name}:latest
+docker buildx build --platform linux/arm64 -t {build_name}:latest .
+```
 
+### Run image
+```bash
+docker run --platform linux/arm64 {build_name}:latest
+```
 
