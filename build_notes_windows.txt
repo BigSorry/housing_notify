@@ -1,7 +1,0 @@
-To test the pi architecture the image is build with arm64.
-
-Need to run the following command on w11.
-docker run --platform linux/arm64 rental_notify:latest
-
-Pi5 should just be able to do
-docker run rental_notify:latest
